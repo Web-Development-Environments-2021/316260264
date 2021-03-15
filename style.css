@@ -1,3 +1,8 @@
+body{
+	font-family: 'Trebuchet MS', sans-serif;
+	text-align: center;
+}
+
 .header {
 	position: fixed;
 	overflow: hidden;
@@ -5,12 +10,12 @@
 	padding: 0px 0px;
   }
 
-  .header img.logo {
-	  margin-right: 10px;
-  }
+.header img.logo {
+	margin-right: 10px;
+}
   
-  /* Style the header links */
-  .header a {
+
+.header a {
 	float: left;
 	color: black;
 	text-align: center;
@@ -21,31 +26,32 @@
 	border-radius: 4px;
   }
   
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
+.header a.logo {
 	font-size: 25px;
 	font-weight: bold;
   }
   
-  /* Change the background color on mouse-over */
-  .header a:hover {
-	background-color: #ddd;
+
+.header a:hover {
+	background-color: rgb(54, 151, 231);
 	color: black;
   }
   
-  /* Style the active/current link*/
-  .header a.active {
-	background-color: dodgerblue;
-	color: white;
-  }
-  
-  /* Float the link section to the right */
-  .header-right {
+ 
+.header-right {
 	float: right;
   }
+
+h3
+  {
+	text-align: center;
+	font-size: 25px;
+	border-bottom: 10px solid  rgb(54, 151, 231);;
+	margin: 10px;
+  }
   
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
+
+@media screen and (max-width: 500px) {
 	.header a {
 	  float: none;
 	  display: block;
