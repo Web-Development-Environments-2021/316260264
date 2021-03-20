@@ -24,66 +24,54 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
 <h3><span>About Me</span></h3>  
-<p><strong>First Name:</strong>Ludmila</p>
-<p><strong>Last Name:</strong>Lemashov</p>
 <p>&nbsp;</p>
-<p>Hello</p>
-<p>My name is Ludmila Lemashov I am 85 years old......................</p>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<br/>
-<br/>
-<br/>
+<p>Hello,</p>
+<p class="about me">My name is Ludmila Lemashov I am 81 years old, I was born in Almaty Kazakhstan in 1939. I worked as a 
+  water engineer in Tashket, Uzbekistan I was married to Michael Lemashov 1935-2011. Michael
+  worked as a mechanical engineer. My father served as a pilot in the soviet union army, and my mother was an accountant. I have
+  two brothers Genady and Alexander, Genady is an Architect and Alexander was a Dentist. Because of my father being 
+  pilot and officer my family often moved from country to country all over the soviet union for example: kazakhstan, russia,
+  uzbekistan, georgia. I came to israel in 1994, I live in the city Ashdod i have 5 grandsons and 1 great grandchild.
+</p>
 </section>
-
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 <h3><span>Photos</span></h3>
 <br/>
 <br/>
+<div class="gallery">
+    <img src="1.jpeg" width="700" height="900">
+  </a>
+  
+</div>
+
+<div class="gallery">
+    <img src="2.jpeg" width="900" height="1700">
+  </a>
+  
+</div>
+
+<div class="gallery">
+    <img src="3.jpeg">
+  </a>
+  
+</div>
+
+<div class="gallery">
+    <img src="4.jpeg" width="900" height="1700">
+  </a>
+</div>
+
+<div class="gallery">
+    <img src="5.jpeg" width="1200" height="1700">
+  </a>
+</div>
 <br/>
 </section>
 
 <section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
@@ -136,11 +124,34 @@
 <br/>
 <br/>
 <h3><span>contact me</span></h3>
-<br/>
-<br/>
+<h2>Hi grandma, use this form if you want to send me an email:</h2>
+
+<form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
+E-mail:<br>
+<input class="email" type="text" name="mail" value="ludmila.lemashov@gmail.com" size="30"><br>
+Comment:<br>
+<!--<textarea rows="7" cols="60" value="Grandma please write here the message you want to send">-->
+<textarea id="mytextarea" aria-setsize="20"></textarea>
+  
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+
+
 <br/>
 </section>
 
+
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script>
+  tinymce.init({
+    selector: "#mytextarea",
+    plugins: "emoticons",
+    toolbar: "emoticons",
+    toolbar_location: "center",
+    menubar: false
+  });
+</script>
 
 <script type="text/javascript">
 $(function(){

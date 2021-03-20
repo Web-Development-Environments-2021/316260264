@@ -10,11 +10,26 @@ body{
 	padding: 0px 0px;
   }
 
+#mytextarea {
+	width: 30px;
+	size: 5px;
+	height: 15px;
+	margin: 50px;
+}
+
+.email{
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+
 .header img.logo {
 	margin-right: 10px;
 }
   
-
+.section{
+	font-size: 25px;
+}
 .header a {
 	float: left;
 	color: black;
