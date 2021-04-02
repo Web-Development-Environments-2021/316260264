@@ -7,16 +7,14 @@
 </head>
 <body>
   <div class="header">
-    <img src="grandma-header.png" class="logo" width="70" height="70"></img>
-    <div class="header-right">
-      <a class="active" href="#about">About Me</a>
-      <a href="#photos">My Photos</a>
-      <a href="#playlist">My Playlist</a>
-      <a href="#like">Like</a>
-      <a href="#qrcoder">QR code</a>
-      <a href="#spa">Q&A</a>
-      <a href="#contact">Contact Me</a>
-    </div>
+    <img src="grandma-header.png" class="logo" align="left" width="70" height="70"></img>
+      <li><a class="active" href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
   </div>
 
 <section id="about" class="section">
@@ -27,41 +25,40 @@
 <h3><span>About Me</span></h3>  
 <p>Hello,</p>
 <p class="about me">My name is Ludmila Lemashov I am 81 years old, I was born in Almaty Kazakhstan in 1939. I worked as a 
-  water engineer in Tashket, Uzbekistan I was married to Michael Lemashov 1935-2011. Michael
+  water engineer in Tashket, Uzbekistan. I was married to Michael Lemashov 1935-2011. Michael
   worked as a mechanical engineer. My father served as a pilot in the soviet union army, and my mother was an accountant. I have
   two brothers Genady and Alexander, Genady is an Architect and Alexander was a Dentist. Because of my father being 
   pilot and officer my family often moved from country to country all over the soviet union for example: kazakhstan, russia,
   uzbekistan, georgia. I came to israel in 1994, I live in the city Ashdod i have 5 grandsons and 1 great grandchild.
 </p>
-</section>
 <section id="photos" class="section">
-<h3><span>Photos</span></h3>
-<div class="gallery">
-    <img src="1.jpeg" width="200" height="300">
-  </a>
-</div>
-
-<div class="gallery">
-    <img src="2.jpeg" width="200" height="350">
-  </a>
-</div>
-
-<div class="gallery">
-    <img src="3.jpeg" width="600" height="350">
-  </a>
-</div>
-
-<div class="gallery">
-    <img src="4.jpeg" width="200" height="300">
-  </a>
-</div>
-
-<div class="gallery">
-    <img src="5.jpeg" width="250" height="300">
-  </a>
-</div>
-<br/>
-</section>
+  <h3><span>Photos</span></h3>
+  <div class="gallery">
+      <img src="1.jpeg" width="200" height="300">
+    </a>
+  </div>
+  
+  <div class="gallery">
+      <img src="2.jpeg" width="200" height="350">
+    </a>
+  </div>
+  
+  <div class="gallery">
+      <img src="3.jpeg" width="600" height="350">
+    </a>
+  </div>
+  
+  <div class="gallery">
+      <img src="4.jpeg" width="200" height="300">
+    </a>
+  </div>
+  
+  <div class="gallery">
+      <img src="5.jpeg" width="250" height="300">
+    </a>
+  </div>
+  <br/>
+  </section>
 
 <section id="playlist" class="section">
 <h3><span>My Playlist</span></h3>
@@ -88,28 +85,39 @@
 </section>
 <section id="spa" class="section">
 
-<h3><span>Answers</span></h3>
+<h3><span>Q&A</span></h3>
 <br/>
-<br/>
-<br/>
+<table class="table" border="1">
+  <tr>
+    <td>Web 1.0</th>
+    <td>Web 2.0</th>
+    <td>Web 3.0</th>
+  </tr>
+  <tr>
+    <td>Read-only and static web</td>
+    <td>Read & write web</td>
+    <td>Read, write & execute web</td>
+  </tr>
+  <tr>
+    <td>Milion users</td>
+    <td>Billion users</td>
+    <td>Trillion users</td>
+  </tr>
+  <tr>
+    <td>Companies publish content that people consume</td>
+    <td>People publish content that other people can consume,<br>companies build platforms that let people publish content for other people for example<br>youtube, wikipedia</td>
+    <td>People build applications that other people can interact with,<br>companies build platforms that allow people to<br>publish services by leveraging the bond beteween people or content for exmaple facebook, google-maps.</td>
+  </tr>
+</table>
+
+<p><h1><u>Use Case: regarding 3rd difference</u></h1></p>
+    <p>
+      <u>Web 1.0:</u> Users find the content they are interested in by entering the url of the website.<br>
+      <u>Web 3.0:</u> Users can go to any web engine and write query with the content they are intersted in.
+    </p>
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <h3><span>contact me</span></h3>
 <h2>Hi grandma, use this form if you want to send me an email:</h2>
@@ -117,7 +125,7 @@
 <form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
 E-mail:<br>
 <input class="email" type="text" name="mail" value="ludmila.lemashov@gmail.com" size="30"><br>
-Comment:<br>
+Text:<br>
 <!--<textarea rows="7" cols="60" value="Grandma please write here the message you want to send">-->
 <textarea id="mytextarea" aria-setsize="20"></textarea>
   
